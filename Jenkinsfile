@@ -10,7 +10,8 @@ pipeline {
 
         stage('Compile') {
             steps {
-                bat "mvnw.cmd clean compile"
+                bat "mvn clean compile"
+
             }
         }
     }
