@@ -10,8 +10,8 @@ pipeline {
 
         stage('Compile') {
             steps {
+                echo "Building with system Maven..."
                 bat "mvn clean compile"
-
             }
         }
     }
